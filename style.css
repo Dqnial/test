@@ -1,0 +1,23 @@
+a{
+    text-decoration: none;
+}
+
+.product-card .product-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #222222;
+}
+
+.prod-price{
+    margin: 4px 0;
+}
+
+.product-card .prod-price {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: #222222;
+}
