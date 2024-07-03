@@ -8,10 +8,6 @@ const swiper = new Swiper('.swiper', {
 	},
 	forceToAxis: false,
 	breakpoints: {
-        320: {
-			slidesPerView: 1.5,
-			spaceBetween: 5,
-		},
 		640: {
 			slidesPerView: 3.5,
 			spaceBetween: 5,
