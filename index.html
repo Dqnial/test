@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Event Schedule</title>
+  </head>
+  <body>
+    <section class="event-schedule">
+      <div class="container">
+        <div class="event-schedule-inner">
+          <h2 class="event-schedule-title text-center">
+            Information Of Event Schedule
+          </h2>
+          <div
+            class="event-schedule-subtitle d-flex align-items-center justify-content-center"
+          >
+            <img src="images/svg/subtitle-icon.svg" alt="" />
+            <h6>OUR EVENT TIMETABLE</h6>
+          </div>
+          <div class="event-schedule-slider swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <a
+                class="event-schedule-slide-item swiper-slide active"
+                onclick="showDay(1)"
+              >
+                <div class="event-schedule-slide-item-svg">
+                  <img src="images/svg/calendar-alt.svg" alt="" />
+                </div>
+                <h3>DAY 01</h3>
+                <h5>16 March, 2024</h5>
+              </a>
+              <a
+                class="event-schedule-slide-item swiper-slide"
+                onclick="showDay(2)"
+              >
+                <div class="event-schedule-slide-item-svg">
+                  <img src="images/svg/calendar-alt.svg" alt="" />
+                </div>
+                <h3>DAY 02</h3>
+                <h5>17 March, 2024</h5>
+              </a>
+              <a
+                class="event-schedule-slide-item swiper-slide"
+                onclick="showDay(3)"
+              >
+                <div class="event-schedule-slide-item-svg">
+                  <img src="images/svg/calendar-alt.svg" alt="" />
+                </div>
+                <h3>DAY 03</h3>
+                <h5>18 March, 2024</h5>
+              </a>
+              <a
+                class="event-schedule-slide-item swiper-slide"
+                onclick="showDay(4)"
+              >
+                <div class="event-schedule-slide-item-svg">
+                  <img src="images/svg/calendar-alt.svg" alt="" />
+                </div>
+                <h3>DAY 04</h3>
+                <h5>19 March, 2024</h5>
+              </a>
+              <a
+                class="event-schedule-slide-item swiper-slide"
+                onclick="showDay(5)"
+              >
+                <div class="event-schedule-slide-item-svg">
+                  <img src="images/svg/calendar-alt.svg" alt="" />
+                </div>
+                <h3>DAY 05</h3>
+                <h5>20 March, 2024</h5>
+              </a>
+              <a
+                class="event-schedule-slide-item swiper-slide"
+                onclick="showDay(6)"
+              >
+                <div class="event-schedule-slide-item-svg">
+                  <img src="images/svg/calendar-alt.svg" alt="" />
+                </div>
+                <h3>DAY 06</h3>
+                <h5>21 March, 2024</h5>
+              </a>
+              <a
+                class="event-schedule-slide-item swiper-slide"
+                onclick="showDay(7)"
+              >
+                <div class="event-schedule-slide-item-svg">
+                  <img src="images/svg/calendar-alt.svg" alt="" />
+                </div>
+                <h3>DAY 07</h3>
+                <h5>22 March, 2024</h5>
+              </a>
+            </div>
+
+            <div class="swiper-button-prev event-schedule-slider-button-prev">
+              <svg
+                width="68"
+                height="68"
+                viewBox="0 0 68 68"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.666748 34.0001C0.666748 52.3801 15.6201 67.3334 34.0001 67.3334C52.3801 67.3334 67.3334 52.3801 67.3334 34.0001C67.3334 15.6201 52.3801 0.66677 34.0001 0.66677C15.6201 0.66677 0.666748 15.6201 0.666748 34.0001ZM43.0234 19.6901L28.7134 34.0001L43.0234 48.3101L38.3101 53.0234L19.2867 34.0001L38.3101 14.9768L43.0234 19.6901Z"
+                  fill="#2907F5"
+                />
+              </svg>
+            </div>
+            <div class="swiper-button-next event-schedule-slider-button-next">
+              <svg
+                width="68"
+                height="68"
+                viewBox="0 0 68 68"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.666748 34.0001C0.666748 52.3801 15.6201 67.3334 34.0001 67.3334C52.3801 67.3334 67.3334 52.3801 67.3334 34.0001C67.3334 15.6201 52.3801 0.66677 34.0001 0.66677C15.6201 0.66677 0.666748 15.6201 0.666748 34.0001ZM43.0234 19.6901L28.7134 34.0001L43.0234 48.3101L38.3101 53.0234L19.2867 34.0001L38.3101 14.9768L43.0234 19.6901Z"
+                  fill="#2907F5"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="event-card-list active" id="day1">
+            <div class="event-card-item">
+              <div class="event-card-left">
+                <img src="images/meetup-talk.jpg" alt="" />
+              </div>
+              <div class="event-card-right"></div>
+              <div class="event-card-center">
+                <h3>UI/UX Designer Meetup 2024</h3>
+                <div class="event-card-center-time">
+                  <img src="images/svg/clock-outline.svg" alt="" />
+                  <p>9:30 - 10:30 AM</p>
+                </div>
+                <p>
+                  Ensure that the event venue is accessible to all participants,
+                  including those with disabilities, and provide features like
+                  live captioning or sign language interpretation if possible
+                  like presentations, videos
+                </p>
+                <div class="event-card-center-author-list">
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>UI designer</h4>
+                      <h5>Max</h5>
+                    </div>
+                  </div>
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>UI designer</h4>
+                      <h5>Max</h5>
+                    </div>
+                  </div>
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>UI designer</h4>
+                      <h5>Max</h5>
+                    </div>
+                  </div>
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>UI designer</h4>
+                      <h5>Max</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-item">
+              <div class="event-card-left">
+                <img src="images/meetup-talk.jpg" alt="" />
+              </div>
+              <div class="event-card-right"></div>
+              <div class="event-card-center">
+                <h3>UI/UX Designer Meetup 2024</h3>
+                <div class="event-card-center-time">
+                  <img src="images/svg/clock-outline.svg" alt="" />
+                  <p>9:30 - 10:30 AM</p>
+                </div>
+                <p>
+                  Ensure that the event venue is accessible to all participants,
+                  including those with disabilities, and provide features like
+                  live captioning or sign language interpretation if possible
+                  like presentations, videos
+                </p>
+                <div class="event-card-center-author-list">
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>UI designer</h4>
+                      <h5>Max</h5>
+                    </div>
+                  </div>
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>UI designer</h4>
+                      <h5>Max</h5>
+                    </div>
+                  </div>
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>UI designer</h4>
+                      <h5>Max</h5>
+                    </div>
+                  </div>
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>UI designer</h4>
+                      <h5>Max</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="event-card-item">
+              <div class="event-card-left">
+                <img src="images/meetup-talk.jpg" alt="" />
+              </div>
+              <div class="event-card-right"></div>
+              <div class="event-card-center">
+                <h3>UI/UX Designer Meetup 2024</h3>
+                <div class="event-card-center-time">
+                  <img src="images/svg/clock-outline.svg" alt="" />
+                  <p>9:30 - 10:30 AM</p>
+                </div>
+                <p>
+                  Ensure that the event venue is accessible to all participants,
+                  including those with disabilities, and provide features like
+                  live captioning or sign language interpretation if possible
+                  like presentations, videos
+                </p>
+                <div class="event-card-center-author-list">
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>UI designer</h4>
+                      <h5>Max</h5>
+                    </div>
+                  </div>
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>UI designer</h4>
+                      <h5>Max</h5>
+                    </div>
+                  </div>
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>UI designer</h4>
+                      <h5>Max</h5>
+                    </div>
+                  </div>
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>UI designer</h4>
+                      <h5>Max</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="event-card-list" id="day2">
+            <div class="event-card-item">
+              <div class="event-card-left">
+                <img src="images/meetup-talk.jpg" alt="" />
+              </div>
+              <div class="event-card-center">
+                <h3>Frontend developing Meetup 2024</h3>
+                <div class="event-card-center-time">
+                  <img src="images/svg/clock-outline.svg" alt="" />
+                  <p>9:30 - 10:30 AM</p>
+                </div>
+                <p>
+                  Ensure that the event venue is accessible to all participants,
+                  including those with disabilities, and provide features like
+                  live captioning or sign language interpretation if possible
+                  like presentations, videos
+                </p>
+                <div class="event-card-center-author-list">
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>Frontend developer</h4>
+                      <h5>John</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="event-card-right"></div>
+            </div>
+          </div>
+          <div class="event-card-list" id="day3">
+            <div class="event-card-item">
+              <div class="event-card-left">
+                <img src="images/meetup-talk.jpg" alt="" />
+              </div>
+              <div class="event-card-center">
+                <h3>Backend developing Meetup 2024</h3>
+                <div class="event-card-center-time">
+                  <img src="images/svg/clock-outline.svg" alt="" />
+                  <p>9:30 - 10:30 AM</p>
+                </div>
+                <p>
+                  Ensure that the event venue is accessible to all participants,
+                  including those with disabilities, and provide features like
+                  live captioning or sign language interpretation if possible
+                  like presentations, videos
+                </p>
+                <div class="event-card-center-author-list">
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>Backend developer</h4>
+                      <h5>Dan</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="event-card-right"></div>
+            </div>
+          </div>
+          <div class="event-card-list" id="day4">
+            <div class="event-card-item">
+              <div class="event-card-left">
+                <img src="images/meetup-talk.jpg" alt="" />
+              </div>
+              <div class="event-card-center">
+                <h3>Graphic design and illustration Meetup</h3>
+                <div class="event-card-center-time">
+                  <img src="images/svg/clock-outline.svg" alt="" />
+                  <p>9:30 - 10:30 AM</p>
+                </div>
+                <p>
+                  Ensure that the event venue is accessible to all participants,
+                  including those with disabilities, and provide features like
+                  live captioning or sign language interpretation if possible
+                  like presentations, videos
+                </p>
+                <div class="event-card-center-author-list">
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>Graphic designer</h4>
+                      <h5>Alice</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="event-card-right"></div>
+            </div>
+          </div>
+          <div class="event-card-list" id="day5">
+            <div class="event-card-item">
+              <div class="event-card-left">
+                <img src="images/meetup-talk.jpg" alt="" />
+              </div>
+              <div class="event-card-center">
+                <h3>Website and web application design Meetup</h3>
+                <div class="event-card-center-time">
+                  <img src="images/svg/clock-outline.svg" alt="" />
+                  <p>9:30 - 10:30 AM</p>
+                </div>
+                <p>
+                  Ensure that the event venue is accessible to all participants,
+                  including those with disabilities, and provide features like
+                  live captioning or sign language interpretation if possible
+                  like presentations, videos
+                </p>
+                <div class="event-card-center-author-list">
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>Website and web application designer</h4>
+                      <h5>Sara</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="event-card-right"></div>
+            </div>
+          </div>
+          <div class="event-card-list" id="day6">
+            <div class="event-card-item">
+              <div class="event-card-left">
+                <img src="images/meetup-talk.jpg" alt="" />
+              </div>
+              <div class="event-card-center">
+                <h3>Animation and interactivity in UI/UX</h3>
+                <div class="event-card-center-time">
+                  <img src="images/svg/clock-outline.svg" alt="" />
+                  <p>9:30 - 10:30 AM</p>
+                </div>
+                <p>
+                  Ensure that the event venue is accessible to all participants,
+                  including those with disabilities, and provide features like
+                  live captioning or sign language interpretation if possible
+                  like presentations, videos
+                </p>
+                <div class="event-card-center-author-list">
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>Animator</h4>
+                      <h5>George</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="event-card-right"></div>
+            </div>
+          </div>
+          <div class="event-card-list" id="day7">
+            <div class="event-card-item">
+              <div class="event-card-left">
+                <img src="images/meetup-talk.jpg" alt="" />
+              </div>
+              <div class="event-card-center">
+                <h3>UX Research and Testing</h3>
+                <div class="event-card-center-time">
+                  <img src="images/svg/clock-outline.svg" alt="" />
+                  <p>9:30 - 10:30 AM</p>
+                </div>
+                <p>
+                  Ensure that the event venue is accessible to all participants,
+                  including those with disabilities, and provide features like
+                  live captioning or sign language interpretation if possible
+                  like presentations, videos
+                </p>
+                <div class="event-card-center-author-list">
+                  <div class="event-card-center-author-item">
+                    <img src="images/portrait.jpg" alt="" />
+                    <div class="event-card-center-author-text">
+                      <h4>Tester</h4>
+                      <h5>Timmy</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="event-card-right"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/main.js"></script>
+</html>
