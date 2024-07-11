@@ -267,14 +267,44 @@ body {
 
 .event-card-left {
   order: 1;
+  background-color: #f8f8f8;
 }
 
 .event-card-center {
   order: 2;
+  background-color: #f8f8f8;
 }
 
 .event-card-right {
   order: 3;
+  background-color: #f8f8f8;
+}
+
+.event-schedule-slide-item {
+  background-color: #f8f8f8;
+}
+
+@media (max-width: 380px) {
+  .event-card-center-author-item h4 {
+    font-size: 12px;
+  }
+  .event-card-center-author-item h5 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .event-schedule-title {
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .event-card-center h3 {
+    font-size: 24px;
+  }
+  .event-card-center-author-item img {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 @media (max-width: 750px) {
